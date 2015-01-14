@@ -1,10 +1,11 @@
 HOSTS:
-  centos-64-x64:
+  ubuntu-12.04-amd64-digital-ocean:
     roles:
       - master
-    platform: el-6-x86_64
-    box : centos-64-x64-vbox4210-nocm
-    box_url : http://puppet-vagrant-boxes.puppetlabs.com/centos-64-x64-vbox4210-nocm.box
-    hypervisor : vagrant
+    flavor: '512MB'
+    platform: ubuntu-12.04-amd64
+    image_id: 6374128
+    region: 'London 1'
+    hypervisor : digital_ocean
 CONFIG:
   type: git
