@@ -4,8 +4,12 @@ HOSTS:
       - master
     flavor: '512MB'
     platform: ubuntu-12.04-amd64
-    image_id: 6374128
-    region: 'London 1'
-    hypervisor : digital_ocean
+    image_id: 10321756 # Ubuntu 12.04.5 x64
+    region_id: 7 #London
+    flavor_id: 66 #512MB
+    cloud_provider: DigitalOcean
+    hypervisor : fog
+    digitalocean_api_key: REDACTED
+    digitalocean_client_id: REDACTED
 CONFIG:
   type: git

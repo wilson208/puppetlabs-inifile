@@ -11,6 +11,7 @@ group :development, :unit_tests do
 end
 
 group :system_tests do
+  gem 'beaker',        :github => 'petems/beaker', :ref => 'QENG-1677-add_fog_hypervisor', :require => false
   gem 'beaker-rspec',  :require => false
   gem 'serverspec',    :require => false
 end
